@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #2C3333;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: beige;
+    font-size: 28px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.subtitulo {
+    color: beige;
+    font-size: 18px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 222px;
+    height: 100px;
+    background: #2E4F4F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    color: beige;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 70px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid beige;
+    color: beige;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 30px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background: cornflowerblue;
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: cornflowerblue;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 50px;
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+} 
+
+#mensajes {
+    width: 280px;
+    background: cornflowerblue;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: beige;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid beige;
+    color: beige;
+    font-family: 'Press Start 2P', cursive;
+    margin: 10px 0;
+}
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataques {
+    flex-direction: column;
+    } 
+}
+
+@media (max-width: 300px) {
+      #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    } 
